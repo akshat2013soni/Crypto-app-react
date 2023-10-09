@@ -40,7 +40,9 @@ const Exchanges = () => {
         <Loader />
       ) : (
         <>
-          <HStack wrap={"wrap"} justifyContent={"space-evenly"}>
+          <Container maxW={"container.2xl"} display={"flex"} flexDirection={"column"} justifyContent={"center"}>
+            <Text p={"8"} fontSize={"xl"} fontFamily={"Bebas Neue"} letterSpacing={"wide"} alignSelf={"center"} textDecoration={"underline"}>Visit the leading Crypto exchanges</Text>
+          <HStack  marginBottom={"4"} wrap={"wrap"} justifyContent={"space-evenly"}>
             {exchanges.map((i) => (
               <ExchangeCard
                 key={i.id}
@@ -51,6 +53,8 @@ const Exchanges = () => {
               />
             ))}
           </HStack>
+          </Container>
+          
         </>
       )}
     </Container>
@@ -79,8 +83,8 @@ const ExchangeCard = ({ name, img, rank, url }) => (
         objectFit={"contain"}
         alt={"Exchange"}
       />
-      <Heading size={"md"} noOfLines={1}>
-        {rank}
+      <Heading size={"md"}>
+        #{rank}
       </Heading>
 
       <Text noOfLines={1}>{name}</Text>

@@ -1,11 +1,11 @@
 import { Avatar, Box, Stack, Text, VStack } from "@chakra-ui/react";
+import avatarSrc from "../assets/profile.jpg"
+import {SocialIcon} from "react-social-icons"
 import React from "react";
-
-const avatarSrc = "https://avatars.githubusercontent.com/u/25058652";
 
 const Footer = () => {
   return (
-    <Box
+    <Box 
       bgColor={"blackAlpha.900"}
       color={"whiteAlpha.700"}
       minH={"48"}
@@ -20,14 +20,14 @@ const Footer = () => {
             letterSpacing={"widest"}
             textAlign={["center", "left"]}
           >
-            We are the best crypto trading app in India, we provide our guidance
-            at a very cheap price.
+           Unlock the World of Crypto with CoinSpot: Explore Exchanges, Discover Coins, Analyze Trends!
           </Text>
         </VStack>
 
         <VStack>
           <Avatar boxSize={"28"} mt={["4", "0"]} src={avatarSrc} />
-          <Text>Our Founder</Text>
+          <Text> Created By Akshat Soni</Text>
+         
         </VStack>
       </Stack>
     </Box>

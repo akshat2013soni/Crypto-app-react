@@ -33,9 +33,10 @@ const Home = () => {
         textAlign={"center"}
         fontWeight={"thin"}
         color={"whiteAlpha.700"}
+        fontFamily={"Bebas Neue"} 
         mt={"-20"}
       >
-        Xcrypto
+        CoinSpot
       </Text>
     </Box>
   );
